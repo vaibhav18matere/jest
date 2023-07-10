@@ -50,6 +50,10 @@ describe("APPLICATION", () => {
           const titleTxtElm = screen.getByTitle("close the window");
           expect(titleTxtElm).toBeInTheDocument();
 
+          // "getByTestId"
+          const testIdCheckElm = screen.getByTestId("userName-Check");
+          expect(testIdCheckElm).toBeInTheDocument(); 
+
           const bioElm = screen.getByRole("textbox", {
                name: "Bio" // this is option - of whatever we are writing as a next argument inside object
           });
