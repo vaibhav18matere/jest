@@ -39,6 +39,14 @@ export const Application = () => {
             conditions
           </label>
         </div>
+        <label htmlFor="remote">Remote</label>
+        <input type="text"></input>
+        <label>Remote</label>
+        <select>
+          <option>Select a country</option>
+          <option>India</option>
+        </select>
+        <p>added to check - what happens when "getByLabelText" has multiple same names</p>
         <button disabled>Submit</button>
       </form>
     </>

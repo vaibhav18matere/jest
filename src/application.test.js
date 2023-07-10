@@ -47,6 +47,12 @@ describe("APPLICATION", () => {
           const termsElmLabel = screen.getByLabelText("I agree to the terms and conditions");
           expect(termsElmLabel).toBeInTheDocument();
 
+          // when there are multiple elements with same label text
+          const remoteLabelText = screen.getLabelText("Remote", {
+               selector:"input"
+          });
+          expect(remoteLabelText).toBeInTheDocument();
+
           const submitBtnElm = screen.getByRole("button");
           expect(submitBtnElm).toBeInTheDocument();
 
