@@ -14,6 +14,6 @@ describe("Skills component", () => {
      test("rendereing list of skills", () => {
           render(<Skills skills={skills} />)
           const listItemsElm = screen.getAllByRole("listitem");
-          expect(listItemsElm).toHaveLength(4);
+          expect(listItemsElm).toHaveLength(skills.length);
      })
 })
