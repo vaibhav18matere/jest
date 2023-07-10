@@ -4,4 +4,9 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
+  padding: 2rem 0;
+}
+
+li {
+  list-style-type: none;
 }
