@@ -18,6 +18,11 @@ describe("APPLICATION", () => {
           
           expect(titleOfPage).toBeInTheDocument();
 
+          // "getByLabelText"
+          
+          const labelName = screen.getByLabelText("Name");
+          expect(labelName).toBeInTheDocument();
+
           // check sub heading of page
           const subHeading = screen.getByRole("heading", {
                level:2,
@@ -36,6 +41,11 @@ describe("APPLICATION", () => {
 
           const termsElm = screen.getByRole("checkbox");
           expect(termsElm).toBeInTheDocument();
+
+          // "getByLabelText"
+
+          const termsElmLabel = screen.getByLabelText("I agree to the terms and conditions");
+          expect(termsElmLabel).toBeInTheDocument();
 
           const submitBtnElm = screen.getByRole("button");
           expect(submitBtnElm).toBeInTheDocument();
