@@ -4,7 +4,7 @@ export const Application = () => {
       <h1>application form</h1>
       <h2>Section 1</h2>
       <p>All fields are mandatory</p>
-      <span title="close">X</span>
+      <span title="close the window">X</span>
       <img src="https://via.placeholder.com/150" alt="a person with a laptop alt text" />
       <div data-testid="custom-element">Custom HTML element</div>
       <form>
