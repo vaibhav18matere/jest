@@ -42,6 +42,10 @@ describe("APPLICATION", () => {
           const displayValueElm = screen.getByDisplayValue("Value is - Vaibhav");
           expect(displayValueElm).toBeInTheDocument();
 
+          // "getByAltText"
+          const altTxtElm = screen.getByAltText("a person with a laptop alt text");
+          expect(altTxtElm).toBeInTheDocument();
+
           const bioElm = screen.getByRole("textbox", {
                name: "Bio" // this is option - of whatever we are writing as a next argument inside object
           });
