@@ -38,6 +38,10 @@ describe("APPLICATION", () => {
           const placeHolderTextElm = screen.getByPlaceholderText("Fullname")
           expect(placeHolderTextElm).toBeInTheDocument();
 
+          // "getByDisplayValue"
+          const displayValueElm = screen.getByDisplayValue("Value is - Vaibhav");
+          expect(displayValueElm).toBeInTheDocument();
+
           const bioElm = screen.getByRole("textbox", {
                name: "Bio" // this is option - of whatever we are writing as a next argument inside object
           });

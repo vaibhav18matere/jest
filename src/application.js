@@ -14,7 +14,7 @@ export const Application = () => {
             type="text"
             id="name"
             placeholder="Fullname"
-            value="Vaibhav"
+            value="Value is - Vaibhav"
             onChange={() => {}}
           />
         </div>
@@ -41,11 +41,6 @@ export const Application = () => {
         </div>
         <label htmlFor="remote">Remote</label>
         <input type="text"></input>
-        <label>Remote</label>
-        <select>
-          <option>Select a country</option>
-          <option>India</option>
-        </select>
         <p>added to check - what happens when "getByLabelText" has multiple same names</p>
         <button disabled>Submit</button>
       </form>
