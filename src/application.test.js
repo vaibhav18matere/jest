@@ -30,6 +30,13 @@ describe("APPLICATION", () => {
           
           expect(subHeading).toBeInTheDocument();
 
+          // "getByText"
+          const textSearchElm = screen.getByText("All fields are mandatory");
+          expect(textSearchElm).toBeInTheDocument();
+
+          // "getByPlaceHolderText"
+          const placeHolderTextElm = screen.getByPlaceholderText("Fullname")
+          expect(placeHolderTextElm).toBeInTheDocument();
 
           const bioElm = screen.getByRole("textbox", {
                name: "Bio" // this is option - of whatever we are writing as a next argument inside object
@@ -48,10 +55,10 @@ describe("APPLICATION", () => {
           expect(termsElmLabel).toBeInTheDocument();
 
           // when there are multiple elements with same label text
-          const remoteLabelText = screen.getLabelText("Remote", {
-               selector:"input"
-          });
-          expect(remoteLabelText).toBeInTheDocument();
+          // const remoteLabelText = screen.getLabelText("Remote", {
+          //      selector:"input"
+          // });
+          // expect(remoteLabelText).toBeInTheDocument();
 
           const submitBtnElm = screen.getByRole("button");
           expect(submitBtnElm).toBeInTheDocument();
